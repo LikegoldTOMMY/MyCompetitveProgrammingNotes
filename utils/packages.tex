@@ -1,0 +1,18 @@
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{cpp}{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{orange},
+  frame=single,
+  breaklines=true
+}
+\newcommand{\includecode}[1]{\lstinputlisting[style=cpp]{#1}}
+\newcommand{\codesnippet}[2][10]{\lstinputlisting[style=cpp,firstline=1,lastline=#1]{#2}}
