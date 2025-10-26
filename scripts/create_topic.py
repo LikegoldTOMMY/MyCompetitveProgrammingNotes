@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""
-Generate folders and empty topic .tex files
-- Does NOT touch main.tex or content.tex
-- Only creates folders and files if they don't exist
-- Creates intro.tex in each section and subsection
-"""
+
 
 import os, re, json
 

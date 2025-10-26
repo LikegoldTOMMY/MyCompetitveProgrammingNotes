@@ -6,6 +6,7 @@
 .vscode
 .DS_Store
 /Ignore
+/Practice
 *.bin
 # Compiled source #
 ###################
