@@ -16,5 +16,8 @@ content:
 topic:
 	$(PYTHON) scripts/create_topic.py
 
+order: 
+	$(PYTHON) scripts/order.py
+
 clean:
 	find . -type f \( -name "*.aux" -o -name "*.log" -o -name "*.toc" -o -name "*.out" -o -name "*.bin" -o -name "*.bbl" -o -name "*.blg" -o -name "*.synctex.gz" \) -exec rm -f {} +
