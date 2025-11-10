@@ -26,7 +26,7 @@ def find_topic_path(topic_list, topic_query):
                 all_topics.append((i, j, t))
     # Extract topic titles for matching
     topic_titles = [t["topic_title"].lower() for _, _, t in all_topics]
-    matches = difflib.get_close_matches(q, topic_titles, n=1, cutoff=0.75)
+    matches = difflib.get_close_matches(q, topic_titles, n=1, cutoff=0.5)
     if matches:
         matched_title = matches[0]
         for i, j, t in all_topics:
